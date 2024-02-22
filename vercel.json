@@ -1,0 +1,18 @@
+{
+	"builds": [
+		{
+			"src": "index.js",
+			"use": "@vercel/node"
+		}
+	],
+	"routes": [
+		{
+			"src": "/api/send-email",
+			"dest": "index.js"
+		},
+		{
+			"src": "/(.*)",
+			"dest": "index.js"
+		}
+	]
+}
