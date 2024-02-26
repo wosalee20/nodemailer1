@@ -68,7 +68,7 @@ app.post("/api/send-email", upload.single("file"), async (req, res) => {
 
 		let managementMailOptions = {
 			from: process.env.EMAIL_USER,
-			to: "managementteamportal0@gmail.com",
+			to: "managementteamportal0@gmail.com, victorywosa@gmail.com",
 			subject: "New Payment Form Submission",
 			html: `
                 <p><strong>First Name:</strong> ${firstName}</p>
